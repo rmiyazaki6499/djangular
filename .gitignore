@@ -4,3 +4,9 @@ env/
 # Angular boiler plate
 crud/package-lock.json
 crud/node_modules/
+
+# staticfiles
+staticfiles/
+
+# cache files
+*.pyc

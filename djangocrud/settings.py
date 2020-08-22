@@ -25,7 +25,7 @@ SECRET_KEY = ')l46gdw__1++fgmj75y9jr#d0c80&2m=*ontqbehb46j5=#x*l'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1']
 
 CORS_ORIGIN_WHITELIST = (
     'localhost:4200/'
@@ -67,7 +67,7 @@ ROOT_URLCONF = 'djangocrud.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'dist', 'crud')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -130,4 +130,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
+# Place static in the same location as webpack build files
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+        os.path.join(BASE_DIR, 'dist', 'crud'),
+)
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

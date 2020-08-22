@@ -19,6 +19,8 @@ from django.urls import include, path
 from rest_framework import routers
 from djangocrud.api import views
 
+from .views import index
+
 router = routers.DefaultRouter()
 router.register(r'movies', views.MovieViewSet)
 
@@ -26,6 +28,7 @@ router.register(r'movies', views.MovieViewSet)
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include(router.urls)),
+    path('', index, name='index'),
+    path('api/', include(router.urls)),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
     ]
