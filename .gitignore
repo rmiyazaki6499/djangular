@@ -1,0 +1,5 @@
+# Python Virtual Environment
+env/
+
+# Angular boiler plate
+crud/package-lock.json
