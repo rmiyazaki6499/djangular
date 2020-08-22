@@ -16,7 +16,7 @@ Tutorial on how to add CRUD functionality to objects using Angular and Django wi
 
   Start by cloning the project with the command:
   ```
-  $ git clone https://github.com/rmiyazaki6499/tour-of-heros.git
+  $ git clone https://github.com/rmiyazaki6499/djangular.git
   ```
   
   ## Setting up the project with Docker
@@ -49,8 +49,12 @@ Tutorial on how to add CRUD functionality to objects using Angular and Django wi
 
   **This may take a few moments**
   
-  Navigate to http://localhost:8000 to view the Django Rest Framework API Endpoint on the local server.
+  Navigate to http://localhost:8000 to view the Angular Frontend on the local server.
 It should look something like this:
+
+![Angular Frontend](https://user-images.githubusercontent.com/41876764/90954253-9ac9df00-e427-11ea-850f-8f19a33eba85.png)
+
+Navigate to http://localhost:8000/api/movies to view the Django REST Framework API on the local server.
 
 ![Django REST Framework API](https://user-images.githubusercontent.com/41876764/90950031-c8506180-e402-11ea-8f3f-5baa4894b103.png)
   
