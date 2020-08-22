@@ -49,10 +49,10 @@ Tutorial on how to add CRUD functionality to objects using Angular and Django wi
 
   **This may take a few moments**
   
-  Navigate to http://localhost:4200 to view the site on the local server.
+  Navigate to http://localhost:8000 to view the Django Rest Framework API Endpoint on the local server.
 It should look something like this:
 
-![tour-of-heros](https://user-images.githubusercontent.com/41876764/90862505-5d3f5600-e342-11ea-850b-365b4dbb1c45.png)
+![Django REST Framework API](https://user-images.githubusercontent.com/41876764/90950031-c8506180-e402-11ea-8f3f-5baa4894b103.png)
   
   ### Cleaning up the Container and Image
 
