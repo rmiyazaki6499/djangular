@@ -21,7 +21,7 @@ Tutorial on how to add CRUD functionality to objects using Angular and Django wi
   
   ## Setting up the project with Docker
 
-  For those that are not interested in setting up the project manually or would simply not have to worry about downloading node.js and its dependencies, I have created a Dockerfile and docker-compose.yml file to help create a container with everything you would need to run the **project**.
+  For those that are not interested in setting up the project manually or would simply not have to worry about downloading node.js and its dependencies, I have created a Dockerfile and docker-compose.yml file to help create a container with everything you would need to run the **djangular project**.
 
   ### Install Docker
 
@@ -43,18 +43,18 @@ Tutorial on how to add CRUD functionality to objects using Angular and Django wi
   - Go into the project directory to build and run the container with:
 
   ```
-  $ cd tour-of-heros/
+  $ cd djangular/
   $ docker-compose up -d --build
   ```
 
-  **This may take a few moments**
+  **This may take a few moments, especially for the Angular Server to spin up**
   
-  Navigate to http://localhost:8000 to view the Angular Frontend on the local server.
+  Navigate to http://localhost:4200 to view the Angular Frontend on the local server.
 It should look something like this:
 
 ![Angular Frontend](https://user-images.githubusercontent.com/41876764/90954253-9ac9df00-e427-11ea-850f-8f19a33eba85.png)
 
-Navigate to http://localhost:8000/api/movies to view the Django REST Framework API on the local server.
+Navigate to http://localhost/movies to view the Django REST Framework API on the local server.
 
 ![Django REST Framework API](https://user-images.githubusercontent.com/41876764/90950031-c8506180-e402-11ea-8f3f-5baa4894b103.png)
   
